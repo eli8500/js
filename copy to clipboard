@@ -1,0 +1,16 @@
+function copyText(text,preText){
+	var copyTextarea = document.createElement("textarea");
+	copyTextarea.className = "js-copytextarea";
+	document.body.appendChild(copyTextarea);
+	copyTextarea.value = text;
+	copyTextarea.select();
+	try {
+		var successful = document.execCommand('copy');
+
+		if (!successful)
+			window.prompt(preText,text);
+	} catch (e) {
+
+	}
+	document.body.removeChild(copyTextarea);
+}
