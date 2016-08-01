@@ -8,7 +8,7 @@ scope.$destroy();
 
 
 used like a breage from outside word to angular
-$apply([exp]);
+scope.$apply([exp]);
 
 
 listens on events of a given type
