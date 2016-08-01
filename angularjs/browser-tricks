@@ -1,0 +1,16 @@
+$('') = querySelector
+$$('') = querySelectorAll
+
+SCOPE
+angular.element($('')).scope();
+angular.element($('')).isolateScope();
+
+SERVICES
+angular.element($('.ng-scope')).injector().get(SERVICE_NAME);
+
+DIRECTIVE CONTROLLER
+angular.element($('')).controller()
+
+$0 - element that you stand on in reval pannel
+
+$1-$4 -  Access the last 5 DOM elements selected in the inspector window
