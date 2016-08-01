@@ -1,0 +1,9 @@
+app.directive('someDirective', function () {
+  return {
+    scope: {
+      oneWay: '@',
+      twoWay: '=',
+      expr: '&'
+    }
+  };
+});
