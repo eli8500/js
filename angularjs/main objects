@@ -1,0 +1,24 @@
+re fire all watchers for this scope and his childs
+scope.$digest()
+
+
+remove this scope and his children from main scope
+scope.$destroy();
+
+
+
+used like a breage from outside word to angular
+$apply([exp]);
+
+
+listens on events of a given type
+scope.$on(name, listener);
+
+
+
+fire and pass event upway include current scope
+scope.$emit(name, args);
+
+
+dispatch event downway
+scope.$broadcast(name, args);
