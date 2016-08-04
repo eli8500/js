@@ -1,0 +1,22 @@
+var app = angular.module('app',['ui.router','ui.bootstrap']);
+var partialsTmplPrefix = 'templates/partials/';
+// configure our routes
+app.config(function($stateProvider, $urlRouterProvider) {
+    // For any unmatched url, redirect to /state1
+     $urlRouterProvider.otherwise("/home");
+    //
+    // Now set up the states
+    $stateProvider
+        .state('home', {
+            url: "/home",
+            templateUrl: partialsTmplPrefix+"home.html"
+        });
+
+});
+
+
+// create the controller and inject Angular's $scope
+app.controller('mainController', function($scope) {
+    // create a message to display in our view
+    $scope.message = 'Everyone come and see how good I look!';
+});
